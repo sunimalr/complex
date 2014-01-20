@@ -1,0 +1,15 @@
+package parser;
+
+import lex.Token;
+import inter.AbstractNode;
+
+public class LeafNode extends AbstractNode{
+	
+	public Token tok;
+	
+	public LeafNode(Token t){
+		super.value=AbstractNode.used.size(); //??????????????????????????
+		this.tok=t;
+	}
+
+}
